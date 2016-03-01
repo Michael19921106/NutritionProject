@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.yalantis.phoenix.PullToRefreshView
+                android:id="@+id/pull_to_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:id="@+id/recycler_view"
+                ></android.support.v7.widget.RecyclerView>
+    </com.yalantis.phoenix.PullToRefreshView>
+    <include android:id="@+id/load_data_failed_layout"
+        layout="@layout/layout_loading_failed"
+        />
+    <ProgressBar
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/progressbar"/>
+
+</FrameLayout>
