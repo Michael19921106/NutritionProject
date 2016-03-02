@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:textSize="25sp" android:text="加载失败_资讯"
-              android:layout_centerInParent="true"/>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:text="在getMethodInfo中判断如果相应的映射不存在，就建立这个映射，并如名字所示缓存起来
+3. 如果是同步调用（接口中直接返回数据，不通过Callback或Observe），直接调用invokeRequest
+4. 如果是非同步调用，先通过RequestInterceptorTape记录拦截请求，记录后在后台线程做实际拦截，后面会提到。
+5. 如果是Observe请求（RxJava），执行第5步，对RxJava不了解，略过
+6. 如果是Callback形式，交由线程池执行
 
-</RelativeLayout>
+接口中的每一个Method有一个对应的RestMethodInfo，关于接口中Annotation信息的处理就都在这里了在getMethodInfo中判断如果相应的映射不存在，就建立这个映射，并如名字所示缓存起来
+3. 如果是同步调用（接口中直接返回数据，不通过Callback或Observe），直接调用invokeRequest
+4. 如果是非同步调用，先通过RequestInterceptorTape记录拦截请求，记录后在后台线程做实际拦截，后面会提到。
+5. 如果是Observe请求（RxJava），执行第5步，对RxJava不了解，略过
+6. 如果是Callback形式，交由线程池执行
+
+接口中的每一个Method有一个对应的RestMethodInfo，关于接口中Annotation信息的处理就都在这里了在getMethodInfo中判断如果相应的映射不存在，就建立这个映射，并如名字所示缓存起来
+3. 如果是同步调用（接口中直接返回数据，不通过Callback或Observe），直接调用invokeRequest
+4. 如果是非同步调用，先通过RequestInterceptorTape记录拦截请求，记录后在后台线程做实际拦截，后面会提到。
+5. 如果是Observe请求（RxJava），执行第5步，对RxJava不了解，略过
+6. 如果是Callback形式，交由线程池执行
+
+接口中的每一个Method有一个对应的RestMethodInfo，关于接口中Annotation信息的处理就都在这里了在getMethodInfo中判断如果相应的映射不存在，就建立这个映射，并如名字所示缓存起来
+3. 如果是同步调用（接口中直接返回数据，不通过Callback或Observe），直接调用invokeRequest
+4. 如果是非同步调用，先通过RequestInterceptorTape记录拦截请求，记录后在后台线程做实际拦截，后面会提到。
+5. 如果是Observe请求（RxJava），执行第5步，对RxJava不了解，略过
+6. 如果是Callback形式，交由线程池执行
+
+接口中的每一个Method有一个对应的RestMethodInfo，关于接口中Annotation信息的处理就都在这里了"
+            android:textColor="@color/black_20"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
