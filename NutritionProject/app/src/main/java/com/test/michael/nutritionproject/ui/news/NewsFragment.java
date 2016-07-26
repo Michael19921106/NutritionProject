@@ -45,19 +45,14 @@ public class NewsFragment extends Fragment {
         }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        pagerAdapter.notifyDataSetChanged();
-    }
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         parentView = View.inflate(getContext(), R.layout.layout_top_navigation, null);
         viewPager= (ViewPager) parentView.findViewById(R.id.inner_viewpager);
-        smartTabLayout = (SmartTabLayout) getActivity().findViewById(R.id.tab_layout);
-        smartTabLayout.setVisibility(View.VISIBLE);
+        smartTabLayout = (SmartTabLayout) parentView.findViewById(R.id.tab_layout);
         pagerAdapter = initPagerAdapter();
         viewPager.setAdapter(pagerAdapter);
         smartTabLayout.setViewPager(viewPager);

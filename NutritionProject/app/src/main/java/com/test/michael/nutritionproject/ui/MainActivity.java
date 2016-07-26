@@ -89,41 +89,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-//    private void setSelection(int position) {
 //
-//        FragmentManager fm = getSupportFragmentManager();
-//        FragmentTransaction ft = fm.beginTransaction();
-//        hideAllFragments(ft);
-//
-//        switch (position) {
-//            case R.id.radio_info:
-//                if (infoFragment == null) {
-//                    infoFragment = TabInfoFragment.getInstance();
-//                    ft.add(R.id.content, infoFragment, TAG_INFO);
-//                } else {
-//                    ft.show(infoFragment);
-//                }
-//                break;
-//            case R.id.radio_data:
-//                if (dataFragment == null) {
-//                    dataFragment = TabDataFragment.getInstance();
-//                    ft.add(R.id.content, dataFragment, TAG_DATA);
-//                } else {
-//                    ft.show(dataFragment);
-//                }
-//                break;
-//            case R.id.radio_mine:
-//                if (mineFragment == null) {
-//                    mineFragment = TabMineFragment.getInstance();
-//                    ft.add(R.id.content, mineFragment, TAG_MINE);
-//                } else {
-//                    ft.show(mineFragment);
-//                }
-//                break;
-//        }
-//        ft.commit();
-//    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

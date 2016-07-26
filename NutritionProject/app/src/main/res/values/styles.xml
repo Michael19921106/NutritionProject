@@ -2,13 +2,16 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
-        <!-- Customize your theme here. -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <!--<item name="android:windowBackground">@color/white</item>-->
-        <!--<item name="android:textColorPrimary">#4a4a4a</item>-->
-        <!--<item name="android:textColorSecondary">#333333</item>-->
+        <item name="android:windowBackground">@color/style_window_background</item>
+        <item name="android:divider">@color/style_divider</item>
+        <item name="android:textColorPrimary">@color/style_text_color_primary</item>
+        <item name="android:textColorSecondary">@color/style_text_color_secondary</item>
+
     </style>
 
     <!-- Base application theme. -->

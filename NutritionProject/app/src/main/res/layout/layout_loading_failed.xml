@@ -1,9 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:textSize="25sp" android:text="加载失败" android:layout_centerInParent="true"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:text="加载失败使用就是这么简单，请求时直接调用接口就行了，甚至不用封装参数，因为参数的信息已经在定义接口时通过Annotation定义好了。
 
-</RelativeLayout>
+从上面的例子可以看到接口直接返回了需要的Java类型，而不是byte[]或String，解析数据的地方就是Converter，这个是可以自定义的，默认是用Gson解析，也就是说默认认为服务器返回的是Json数据，可以通过指定不同的Convert使用不同的解析方法，如用Jackson解析Json，或自定义XmlConvert解析xml数据。
+
+Retrofit的使用就是以下几步：
+
+    定义接口，参数声明，Url都通过Annotation指定
+    通过RestAdapter生成一个接口的实现类(动态代理)
+    调用接口请求数据
+
+接口的定义要用用Rtrofit定义的一些Annotation，所以先看一下Annotation的。使用就是这么简单，请求时直接调用接口就行了，甚至不用封装参数，因为参数的信息已经在定义接口时通过Annotation定义好了。
+
+从上面的例子可以看到接口直接返回了需要的Java类型，而不是byte[]或String，解析数据的地方就是Converter，这个是可以自定义的，默认是用Gson解析，也就是说默认认为服务器返回的是Json数据，可以通过指定不同的Convert使用不同的解析方法，如用Jackson解析Json，或自定义XmlConvert解析xml数据。
+
+Retrofit的使用就是以下几步：
+
+    定义接口，参数声明，Url都通过Annotation指定
+    通过RestAdapter生成一个接口的实现类(动态代理)
+    调用接口请求数据
+
+接口的定义要用用Rtrofit定义的一些Annotation，所以先看一下Annotation的。使用就是这么简单，请求时直接调用接口就行了，甚至不用封装参数，因为参数的信息已经在定义接口时通过Annotation定义好了。
+
+从上面的例子可以看到接口直接返回了需要的Java类型，而不是byte[]或String，解析数据的地方就是Converter，这个是可以自定义的，默认是用Gson解析，也就是说默认认为服务器返回的是Json数据，可以通过指定不同的Convert使用不同的解析方法，如用Jackson解析Json，或自定义XmlConvert解析xml数据。
+
+Retrofit的使用就是以下几步：
+
+    定义接口，参数声明，Url都通过Annotation指定
+    通过RestAdapter生成一个接口的实现类(动态代理)
+    调用接口请求数据
+
+接口的定义要用用Rtrofit定义的一些Annotation，所以先看一下Annotation的。使用就是这么简单，请求时直接调用接口就行了，甚至不用封装参数，因为参数的信息已经在定义接口时通过Annotation定义好了。
+
+从上面的例子可以看到接口直接返回了需要的Java类型，而不是byte[]或String，解析数据的地方就是Converter，这个是可以自定义的，默认是用Gson解析，也就是说默认认为服务器返回的是Json数据，可以通过指定不同的Convert使用不同的解析方法，如用Jackson解析Json，或自定义XmlConvert解析xml数据。
+
+Retrofit的使用就是以下几步：
+
+    定义接口，参数声明，Url都通过Annotation指定
+    通过RestAdapter生成一个接口的实现类(动态代理)
+    调用接口请求数据
+
+接口的定义要用用Rtrofit定义的一些Annotation，所以先看一下Annotation的。使用就是这么简单，请求时直接调用接口就行了，甚至不用封装参数，因为参数的信息已经在定义接口时通过Annotation定义好了。
+
+从上面的例子可以看到接口直接返回了需要的Java类型，而不是byte[]或String，解析数据的地方就是Converter，这个是可以自定义的，默认是用Gson解析，也就是说默认认为服务器返回的是Json数据，可以通过指定不同的Convert使用不同的解析方法，如用Jackson解析Json，或自定义XmlConvert解析xml数据。
+
+Retrofit的使用就是以下几步：
+
+    定义接口，参数声明，Url都通过Annotation指定
+    通过RestAdapter生成一个接口的实现类(动态代理)
+    调用接口请求数据
+
+接口的定义要用用Rtrofit定义的一些Annotation，所以先看一下Annotation的。使用就是这么简单，请求时直接调用接口就行了，甚至不用封装参数，因为参数的信息已经在定义接口时通过Annotation定义好了。
+
+从上面的例子可以看到接口直接返回了需要的Java类型，而不是byte[]或String，解析数据的地方就是Converter，这个是可以自定义的，默认是用Gson解析，也就是说默认认为服务器返回的是Json数据，可以通过指定不同的Convert使用不同的解析方法，如用Jackson解析Json，或自定义XmlConvert解析xml数据。
+
+Retrofit的使用就是以下几步：
+
+    定义接口，参数声明，Url都通过Annotation指定
+    通过RestAdapter生成一个接口的实现类(动态代理)
+    调用接口请求数据
+
+接口的定义要用用Rtrofit定义的一些Annotation，所以先看一下Annotation的。使用就是这么简单，请求时直接调用接口就行了，甚至不用封装参数，因为参数的信息已经在定义接口时通过Annotation定义好了。
+
+从上面的例子可以看到接口直接返回了需要的Java类型，而不是byte[]或String，解析数据的地方就是Converter，这个是可以自定义的，默认是用Gson解析，也就是说默认认为服务器返回的是Json数据，可以通过指定不同的Convert使用不同的解析方法，如用Jackson解析Json，或自定义XmlConvert解析xml数据。
+
+Retrofit的使用就是以下几步：
+
+    定义接口，参数声明，Url都通过Annotation指定
+    通过RestAdapter生成一个接口的实现类(动态代理)
+    调用接口请求数据
+
+接口的定义要用用Rtrofit定义的一些Annotation，所以先看一下Annotation的。"
+            android:textColor="@color/black_20"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
